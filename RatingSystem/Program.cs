@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.IO;
@@ -11,6 +11,14 @@ namespace ReviewSystem
     {
 
         public static void Main(string[] args)
+        {
+
+            Calculate();
+
+            Console.ReadKey();
+        }
+
+        public static void Calculate()
         {
             var path = System.IO.Directory.GetCurrentDirectory() + "\\HotelReview.json";
 
@@ -53,8 +61,6 @@ namespace ReviewSystem
 
                 }
             }
-
-            Console.ReadKey();
         }
     }
 }
